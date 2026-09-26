@@ -1,0 +1,46 @@
+{
+  "database": "knowledge.sqlite3",
+  "vector": {
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "dimensions": 384,
+    "cache_dir": "models",
+    "chunk_chars": 1400,
+    "overlap_chars": 180,
+    "context_budget_tokens": 5000,
+    "rrf_k": 60
+  },
+  "metadata": {
+    "max_context_tokens": 5000
+  },
+  "observability": {
+    "store_query_preview": false
+  },
+  "max_content_bytes": 20000000,
+  "exclude_path_fragments": [
+    ".private",
+    ".env",
+    "credential",
+    "password",
+    "secret",
+    "доступ",
+    "пароль",
+    "токен"
+  ],
+  "corpus": {
+    "root": "corpus_sources"
+  },
+  "code": {
+    "database": "code-index.sqlite3",
+    "provider": "serena",
+    "max_file_bytes": 500000
+  },
+  "collections": [
+    {
+      "name": "knowledge-core",
+      "root": ".",
+      "patterns": ["profile.md", "workspace.md", "current-state.md", "system-prompt.md", "system-prompt.local.md", "policies.md"],
+      "mode": "content"
+    }
+  ],
+  "session_collections": []
+}

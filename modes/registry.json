@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "modes": {
+    "MEMORY_CURATOR": {
+      "title": "Куратор структуры памяти",
+      "summary": "Предлагает scope, тип документа, теги и связи для ручного подтверждения.",
+      "prompt": "memory-curator.md",
+      "source": "memory-curator.md"
+    }
+  }
+}

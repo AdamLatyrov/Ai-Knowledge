@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ai-knowledge": {
+      "command": "node",
+      "args": ["<путь-к-проекту>/build/mcp/server.js"],
+      "cwd": "<путь-к-проекту>"
+    }
+  }
+}
